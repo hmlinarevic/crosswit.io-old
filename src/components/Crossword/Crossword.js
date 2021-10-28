@@ -12,7 +12,7 @@ const Crossword = () => {
 	const puzzle =
 		'FHKEFFHDFEOGIOPVFLDKOIAQFLWIHQRMUOTOXNRIAAESRUOFCUHHELTUFJJSNJDO';
 
-	const data = makeBoardData(puzzle);
+	// const data = makeBoardData(puzzle);
 
 	const handleSubmit = e => {
 		e.preventDefault();
@@ -27,7 +27,7 @@ const Crossword = () => {
 	return (
 		<div className="crossword">
 			<div className="crossword-board">
-				<CrosswordBoard data={data} />
+				<CrosswordBoard puzzle={puzzle} />
 			</div>
 			<form className="crossword-form" onSubmit={handleSubmit}>
 				<Input

@@ -15,25 +15,28 @@ body {
 	background: #f8f9fa;
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
 button {
 	cursor: pointer;
+}
+
+.colorize {
+	background: #b85651;
 }
 
 .crossword {
 	font-family: 'Roboto Slab', serif;
 	font-family: 'Merriweather', serif;
-	width: 500px;
+	width: fit-content;
 	margin: 0 auto;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 	color: #333;
-}
-
-.crossword-board {
-	border-radius: 4px;
-	margin: 0 auto;
-	padding: 1rem 0;
-	margin-bottom: 2rem;
 }
 
 .crossword-form {
@@ -83,15 +86,4 @@ button {
 
 .crossword-button:hover {
 	background-color: #f5f5f5;
-}
-
-.row {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	justify-items: center;
-	margin-bottom: 2.3rem;
-}
-
-.row:last-child {
-	margin-bottom: 0;
 }
