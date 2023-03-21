@@ -4,14 +4,12 @@
     "description": "",
     "main": "index.js",
     "type": "module",
-    "engines": {
-        "node": "16.x"
-    },
     "scripts": {
         "build": "babel src -d lib",
         "dev": "nodemon ./src/index.js",
         "start": "node ./src/index.js",
-        "format": "prettier -w \"src/**/*.js\""
+        "format": "prettier -w \"src/**/*.js\"",
+        "tsc": "tsc -w"
     },
     "keywords": [],
     "author": "",
@@ -25,6 +23,7 @@
     "devDependencies": {
         "@babel/cli": "^7.19.3",
         "@babel/core": "^7.19.3",
-        "@babel/preset-env": "^7.19.4"
+        "@babel/preset-env": "^7.19.4",
+        "typescript": "^5.0.2"
     }
 }
